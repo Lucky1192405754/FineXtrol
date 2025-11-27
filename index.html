@@ -243,7 +243,7 @@
             However, the former often introduces misaligned details and lacks explicit temporal cues, and the latter incurs significant computational cost when converting coordinates to standard motion representations.
           </p>
           <p>
-            To address these issues, we propose <strong>FineXtrol</strong>, a novel control framework for efficient motion generation guided by temporally-aware, precise, user-friendly, and fine-grained textual control signals that describe specific body part movements over time.
+            To address these issues, we propose <strong>FineXtrol</strong>, a novel control framework for efficient motion generation guided by <strong>temporally-aware, precise, user-friendly, and fine-grained</strong> textual control signals that describe specific body part movements over time.
             In support of this framework, we design a <strong>hierarchical contrastive learning module</strong> that encourages the text encoder to produce more discriminative embeddings for our novel control signals, thereby improving motion controllability.
           </p>
           <p>
@@ -257,7 +257,7 @@
         <h2 class="title is-3">Methodology</h2>
         <div class="content has-text-justified">
           <p>
-            FineXtrol adopts a dual-branch architecture based on the ControlNet paradigm. The lower branch (<strong>Frozen MDM</strong>) ensures the stability of general motion generation, while the upper branch (<strong>Trainable Copy</strong>) is responsible for injecting fine-grained textual control signals.
+            FineXtrol adopts a dual-branch architecture based on the ControlNet paradigm. The lower branch (<strong>MDM Transformer Encoder</strong>) ensures the stability of general motion generation, while the upper branch (<strong>Trainable Copy</strong>) is responsible for injecting fine-grained textual control signals.
           </p>
           <img src="./static/images/pipeline.png" alt="FineXtrol Pipeline" style="width: 100%; margin-bottom: 20px;">
           <p>
@@ -275,7 +275,7 @@
 
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Comparisons</h2>
+        <h2 class="title is-3">Comparisons🚧</h2>
         <div class="content has-text-justified">
           <p>
             We compare FineXtrol with state-of-the-art methods like <strong>CoMo</strong> and <strong>OmniControl</strong>.
