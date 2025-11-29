@@ -40,7 +40,7 @@ How to achieve **precise** spatial-temporal control in motion generation using o
 
 ## 📣 News
 - **[2025/11]** Our paper "FineXtrol" has been accepted by **AAAI 2026**! 🎉
-- **[2025/11]** The [Project Page](https://lucky1192405754.github.io/FineXtrol/) is now live.
+- **[2025/11]** The [Project Page](https://lucky1192405754.github.io/projects/FineXtrol/) is now live.
 - **[2025/11]** The paper is available on [ArXiv](https://arxiv.org/abs/2511.18927).
 
 ## 📆 Plan
