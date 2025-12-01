@@ -24,7 +24,7 @@
   <a href="https://arxiv.org/abs/2511.18927">
     <img src="https://img.shields.io/badge/Paper-PDF-yellow?style=flat&logo=arXiv&logoColor=yellow" alt="Paper PDF on arXiv">
   </a>
-  <a href="https://lucky1192405754.github.io/FineXtrol/">
+  <a href="https://lucky1192405754.github.io/projects/FineXtrol/">
     <img src="https://img.shields.io/badge/Project-Page-green?style=flat&logo=Google%20chrome&logoColor=green" alt="Project Page">
   </a>
 </p>
