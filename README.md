@@ -94,6 +94,15 @@ FineXtrol additionally uses a local T5-base encoder. Download it with:
 python download_t5_base.py
 ```
 
+Download the FineXtrol release assets from [Google Drive](https://drive.google.com/drive/folders/1x1ntepPSO1OaePnRuoPUUp3x-tmlUg2m?usp=sharing). The folder contains:
+
+- `model001275090.pt`: released FineXtrol checkpoint for inference and evaluation.
+- `model000475000.pt`: pretrained MDM HumanML3D checkpoint for training initialization.
+- `T5_base_sequence_MLP_0402.pt`: fine-tuned detailed-text T5 encoder checkpoint.
+- `0121_operated_mirror_ori_humanml3d_posefix_annotations_interval0.5_pose_change_th1.0_modified.json`: fine-grained text annotation file.
+
+Please place these files at the paths shown in the layout below, or update the corresponding paths in the scripts.
+
 After downloading, the expected lightweight/external asset layout is:
 
 ```text
@@ -114,7 +123,7 @@ FineXtrol/
 └── text_mot_match/                      # T2M evaluator checkpoints
 ```
 
-The FineXtrol checkpoint, fine-tuned T5 encoder, and fine-grained annotation JSON will be provided as external downloads. Please place them at the paths shown above, or update the corresponding paths in the scripts.
+The HumanML3D dataset, SMPL assets, GloVe files, and T2M evaluator checkpoints should be downloaded separately following the commands and links above.
 
 ### 3. Prepare datasets
 
