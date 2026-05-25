@@ -45,12 +45,12 @@ How to achieve **precise** spatial-temporal control in motion generation using o
 
 ## 📆 Plan
 - [x] Release paper and project page.
-- [ ] Release the **FineMotion** dataset processing scripts.
-- [ ] Release **FineXtrol** code:
-  - [ ] Environment setup guidance.
-  - [ ] Inference scripts (Pretrained models).
-  - [ ] Training scripts (Hierarchical Contrastive Learning & Diffusion).
-  - [ ] Evaluation metrics.
+- [x] Release the **FineMotion** dataset processing scripts.
+- [x] Release **FineXtrol** code:
+  - [x] Environment setup guidance.
+  - [x] Inference scripts (Pretrained models).
+  - [x] Training scripts (Hierarchical Contrastive Learning & Diffusion).
+  - [x] Evaluation metrics.
 
 ## 🛠️ Getting Started
 
@@ -102,7 +102,6 @@ FineXtrol/
 ├── deps/smpl_models/                    # SMPL/SMPLH assets used by Blender rendering
 ├── dataset/
 │   ├── HumanML3D/                       # HumanML3D dataset, external download
-│   ├── KIT-ML/                          # Optional KIT-ML dataset, external download
 │   └── 0121_operated_mirror_ori_humanml3d_posefix_annotations_interval0.5_pose_change_th1.0_modified.json
 ├── detailed_text_encoder/
 │   └── T5_base_sequence_MLP_0402.pt     # Fine-tuned detailed-text encoder checkpoint
@@ -119,16 +118,19 @@ The FineXtrol checkpoint, fine-tuned T5 encoder, and fine-grained annotation JSO
 
 ### 3. Prepare datasets
 
-For HumanML3D, follow the original HumanML3D preprocessing instructions, then copy the processed dataset into this repository:
-
-```bash
-cp -r ../HumanML3D/HumanML3D ./dataset/HumanML3D
-```
-
-For KIT-ML, download it following the HumanML3D project instructions and place it at:
+Please follow [HumanML3D](https://github.com/EricGuo5513/HumanML3D) to download and prepare the HumanML3D dataset and put it under the `dataset` directory like:
 
 ```text
-./dataset/KIT-ML
+./dataset/HumanML3D/
+├── new_joint_vecs/
+├── texts/
+├── Mean.npy    # same as in [HumanML3D](https://github.com/EricGuo5513/HumanML3D)
+├── Std.npy     # same as in [HumanML3D](https://github.com/EricGuo5513/HumanML3D)
+├── train.txt
+├── val.txt
+├── test.txt
+├── train_val.txt
+└── all.txt
 ```
 
 FineXtrol training requires the fine-grained text annotation file under `./dataset/`. The current default path used by the dataloader is:
