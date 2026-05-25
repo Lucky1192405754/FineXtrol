@@ -232,7 +232,7 @@ The examples below use the same coarse-grained text prompt with different fine-g
 | --- | --- | --- |
 | <img src="static/demos/clockwise_coarse.png" width="100%"> | <img src="static/demos/clockwise_left_leg_control.png" width="100%"> | <img src="static/demos/clockwise_multi_body_control.png" width="100%"> |
 | No fine-grained control. | 1.0-1.5s: Move your left leg back slightly.<br>3.0-3.5s: Move your left leg forward. | 1.0-1.5s: Straighten your left arm.<br>1.5-2.0s: Bend your right knee more.<br>2.5-3.0s: Move your left leg forward. |
-| <video src="static/demos/clockwise_coarse.mp4" controls width="100%"></video> | <video src="static/demos/clockwise_left_leg_control.mp4" controls width="100%"></video> | <video src="static/demos/clockwise_multi_body_control.mp4" controls width="100%"></video> |
+| <img src="static/demos/clockwise_coarse.gif" width="100%"> | <img src="static/demos/clockwise_left_leg_control.gif" width="100%"> | <img src="static/demos/clockwise_multi_body_control.gif" width="100%"> |
 
 ## Train your own FineXtrol
 
@@ -297,14 +297,21 @@ This work is built on many amazing research works and open-source projects, than
 - https://github.com/neu-vi/OmniControl
 - https://github.com/Dai-Wenxun/MotionLCM
 
-<!-- ## Citation
-If you find this repository/work helpful in your research, please consider citing the paper and starring the repo ⭐.
+## Citation
 
-```
-@article{tan2025sopo,
-  title={SoPo: Text-to-Motion Generation Using Semi-Online Preference Optimization},
-  author={Tan, Xiaofeng and Wang, Hongsong and Geng, Xin and Zhou, Pan},
-  journal={Advances in Neural Information Processing Systems},
-  year={2025}
+If you find FineXtrol helpful for your research, please consider citing the paper and starring the repo ⭐.
+
+```bibtex
+@article{Shen_Wu_Chen_Wang_Shen_2026,
+  title         = {FineXtrol: Controllable Motion Generation via Fine-Grained Text},
+  author        = {Shen, Keming and Wu, Bizhu and Chen, Junliang and Wang, Xiaoqin and Shen, Linlin},
+  journal       = {Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume        = {40},
+  number        = {11},
+  pages         = {8905--8913},
+  year          = {2026},
+  month         = {Mar.},
+  doi           = {10.1609/aaai.v40i11.37845},
+  url           = {https://ojs.aaai.org/index.php/AAAI/article/view/37845}
 }
-``` -->
+```
